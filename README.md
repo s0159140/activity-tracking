@@ -1,5 +1,3 @@
-My [Coursera-Reproducible-Research](https://github.com/Xiaodan/Coursera-Reproducible-Research) Repo  
-
 ## Introduction
 
 It is now possible to collect a large amount of data about personal
