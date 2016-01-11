@@ -1,17 +1,20 @@
-Peer Assignment 1: Personal Activity Tracking - Bert CARLIER - Jan 10, 2016
-===========================================================================
+Peer Assessment 1 : Personal Activity Tracking
+==============================================
+Created by Bert CARLIER - Jan 10th 2016
 
-### Making code visible to others
+Let's make sure that other's can read our file
 ```{r}
-echo = TRUE
+echo=TRUE
 ```
 
-### Loading and processing the data
+## Part I: Loading and Preprocessing data
+
 Objectives:
-a: Convert the data in column "data" into POSIXct class data, so they are readable as a date
-b: Calculate the number of weekdays
-c: Identify whether a day is a weekday or day in the weekend
-d: Create a final dataframe holding the date, the weekday number, the weekday type, the interval and the number of steps
+* a Convert the data in column "data" into POSIXct class data, so they are readable as a date
+* b Calculate the number of weekdays
+* c Identify whether a day is a weekday or day in the weekend
+* d: Create a final dataframe holding the date, the weekday number, the weekday type, the interval and the number of steps
+
 ```{r}
 # Clear the workspace
 rm(list=ls())
@@ -44,3 +47,4 @@ activity <- data.frame(date=activity_raw$date,
 # Clear the workspace
 rm(activity_raw)
 ```
+
