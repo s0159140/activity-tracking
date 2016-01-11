@@ -24,9 +24,10 @@ activity_raw$date <- as.POSIXct(activity_raw$date, format="%Y-%m-%d")
 
 # Calculating the weekday number
 activity_raw <- data.frame(date=activity_raw$date, 
-                           weekday=tolower(weekdays(activity_raw$date)), 
-                           steps=activity_raw$steps, 
-                           interval=activity_raw$interval)
+                      weekday=tolower(weekdays(activity_raw$date)), 
+                      steps=activity_raw$steps, 
+                      interval=activity_raw$interval
+                )
 
 # Compute the day type (weekend or weekday)
 activity_raw <- cbind(activity_raw, 
